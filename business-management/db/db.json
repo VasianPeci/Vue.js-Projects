@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "l",
+      "email": "l",
+      "password": "l",
+      "id": 1
+    }
+  ],
+  "businesses": [
+    {
+      "name": "oo",
+      "address": "o",
+      "contact": "o",
+      "id": 1
+    },
+    {
+      "name": "m",
+      "address": "m",
+      "contact": "mm",
+      "id": 2
+    }
+  ]
+}
