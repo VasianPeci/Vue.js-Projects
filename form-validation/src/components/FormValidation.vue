@@ -33,16 +33,12 @@ const formData = ref({
 });
 
 const isNameValid = computed(() => formData.value.name.trim() !== '');
-const isEmailValid = computed(() => /^[^/s@]+@[^\s@]+\.[^\s@]+$/.test(formData.value.email));
+const isEmailValid = computed(() => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.value.email));
 const isPasswordValid = computed(() => formData.value.password.length > 8);
 const isFormValid = computed(() => isNameValid.value && isEmailValid.value && isPasswordValid.value);
 
 const submitForm = () => {
-    if (isFormValid.value) {
-        console.log("Form Submitted Successfully!", formData.value);
-    } else {
-        console.log("Form is invalid! Check the fields.");
-    }
+  console.log("Form Submitted Successfully!", formData.value);
 };
 
 </script>
